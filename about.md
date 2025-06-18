@@ -22,6 +22,26 @@ electronic, energy and biomedical materials...
 
 ---
 
+
+<style>
+  @media (max-width: 768px) {
+    .research-columns {
+      column-count: 1 !important;
+    }
+  }
+</style>
+
+## 🧪 Research Interests
+
+<ul class="research-columns" style="column-count: 2; column-gap: 2em; padding-left: 1em; list-style-type: disc;">
+  <li><strong>AI/ML-guided</strong> materials discovery</li>
+  <li><strong>Electronic materials</strong> & devices</li>
+  <li><strong>Spintronics</strong> & magnetic thin films</li>
+  <li><strong>Electrochemistry</strong></li>
+  <li><strong>Fusion</strong> structural materials</li>
+  <li><strong>Degradable zwitterionic hydrogels</strong> for brain implants</li>
+</ul>
+
 ## 🔬 Research Interests
 
 <div style="column-count: 2; column-gap: 3em; font-size: 1em;">
