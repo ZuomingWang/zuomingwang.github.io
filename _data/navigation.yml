@@ -2,9 +2,10 @@
 main:
   - title: "About"
     url: /about/
-  - title: "News"
-    url: /news/
   - title: "Publications"
     url: /publications/
+  - title: "News"
+    url: /news/
+
   - title: "ORCID"
     url: https://orcid.org/0009-0006-3696-9034
