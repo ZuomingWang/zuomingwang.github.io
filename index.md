@@ -39,7 +39,7 @@ excerpt: >
 
     <!-- 大标题区域 -->
     <h1 style="font-size: 3rem; margin-bottom: 0.2em; color: white;">👋 Hi, I'm <strong>Zuoming Wang</strong></h1>
-    <p style="font-size:1.2rem; margin-top:0;">M.S. in Materials Science, Cornell University</p>
+    <p style="font-size:1.2rem; margin-top:0;">M.S. in Materials Science & Engineering, Cornell University</p>
 
     <!-- 分割线 -->
     <hr style="border-color: rgba(255,255,255,0.3); margin:1.5em 0;">
