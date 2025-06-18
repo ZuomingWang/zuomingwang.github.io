@@ -4,7 +4,8 @@ layout: single
 author_profile: true
 permalink: /about/
 ---
----
+<hr style="border: none; border-top: 1px solid #ddd; margin: 2em 0;" />
+
 <div style="font-size: 1.2em; text-align: center; line-height: 1.6;">
 I am passionate about <strong>combining AI/ML</strong>  
 with experimental and computational methods to accelerate the discovery of 
@@ -20,7 +21,7 @@ electronic, energy and biomedical materials...
   <li><strong>2019 – 2023</strong> — B.S. in Materials Science & Engineering, <a href="https://www.technion.ac.il/en/home-2/" target="_blank">Technion – Israel Institute of Technology</a></li>
 </ul>
 
----
+
 
 
 <style>
@@ -33,7 +34,8 @@ electronic, energy and biomedical materials...
 
 ## 🔬 Research Interests
 
-<div style="column-count: 2; column-gap: 3em; font-size: 1em;">
+
+<div class="research-columns" style="column-count: 2; column-gap: 3em; font-size: 1em;">
 <ul>
   <li><strong>AI/ML-guided</strong> materials discovery</li>
   <li><strong>Degradable zwitterionic hydrogels</strong> for brain implants</li>  
@@ -44,7 +46,7 @@ electronic, energy and biomedical materials...
 </ul>
 </div>
 
----
+
 
 ## 🧪 My Research Background
 
@@ -69,7 +71,7 @@ electronic, energy and biomedical materials...
 
 
 
----
+
 
 ## 📘 Teaching & Grading Experience
 
@@ -78,7 +80,7 @@ electronic, energy and biomedical materials...
 - Grader for Differential and Integral **Calculus 1M**
 - Peer tutor for preparatory **math and physics**
 
----
+
 
 ## 🌟 Hobbies
 

@@ -12,9 +12,9 @@ minimal_mistakes_skin  : "air"                                 # 同 kuanfang.gi
 ############################
 # Site Settings
 ############################
-masthead_title: "Home"
+masthead_title: "Zuoming Wang"
 locale                 : "en-US"
-title                  : "Home"
+title                  : "Zuoming Wang"
 title_separator        : "-"
 name                   : "Zuoming Wang"
 description            : "Cornell M.S."
@@ -58,7 +58,7 @@ footer:
 ############################
 # SEO / Social
 ############################
-og_image : "assets/images/zuoming.jpg"   # 社交分享缩略图
+og_image : "https://zuomingwang.github.io/assets/images/zuoming.jpg"   # 社交分享缩略图
 
 ############################
 # Reading Files & Build

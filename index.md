@@ -5,7 +5,7 @@ title: ' '
 header:
   overlay_image: "/assets/images/background.jpg"
   overlay_color: "#000"
-  overlay_gradient: true
+  overlay_gradient: false
   overlay_filter: 0.188
 excerpt: >
 
