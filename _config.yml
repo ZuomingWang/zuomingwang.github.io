@@ -12,11 +12,11 @@ minimal_mistakes_skin  : "air"                                 # 同 kuanfang.gi
 ############################
 # Site Settings
 ############################
-masthead_title: ""
+masthead_title: " "
 locale                 : "en-US"
-title                  : "Zuoming Wang"
+title                  : " "
 title_separator        : "-"
-name                   : "Zuoming Wang"
+name                   : " "
 description            : "Cornell M.S."
 url                    : "https://zuomingwang.github.io"       # 不要尾斜杠
 baseurl                : ""                                    # 为空—放根域名
