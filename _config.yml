@@ -164,3 +164,9 @@ defaults:
     values:
       layout         : single
       author_profile : true
+
+###########################
+# 强制显示所有导航项
+navigation:
+  sticky: true          # 启用 sticky 效果（见问题 2）
+  collapse_on_mobile: false   # ← 禁用折叠成汉堡包
