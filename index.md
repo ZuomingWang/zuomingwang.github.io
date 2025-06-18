@@ -47,12 +47,12 @@ excerpt: >
     <!-- 研究方向 -->
     <h2 style="font-size:1.5rem; margin-bottom:0.5em; color: white;"> Research Interests</h2>
     <ul class="research-columns" style="column-count:2; column-gap:2em; list-style-type: disc; padding-left:1em; line-height:1.6;">
-      <li>AI-guided materials discovery</li>
-      <li>Computational materials </li>
+      <li>AI-guided materials</li>
       <li>Brain-implant hydrogels</li>
-      <li>Molecular electronics & spintronics</li>
-      <li>Fusion structural materials</li>
+      <li>Eelectronic materials</li>
+      <li>Spintronics</li>
       <li>Electrochemistry</li>
+      <li>Fusion materials</li>
     </ul>
 
     <!-- 分割线 -->
