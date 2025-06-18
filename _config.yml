@@ -17,7 +17,7 @@ locale                 : "en-US"
 title                  : " "
 title_separator        : "-"
 name                   : " "
-description            : "Cornell M.S."
+description            : "biography, publications, and news"
 url                    : "https://zuomingwang.github.io"       # 不要尾斜杠
 baseurl                : ""                                    # 为空—放根域名
 repository             : "ZuomingWang/zuomingwang.github.io"
@@ -34,16 +34,17 @@ search_full_content    : true
 author:
   name       : "Zuoming Wang"
   avatar     : "/assets/images/zuoming.jpg"
-  bio        : "M.S. @ Cornell"
+  bio        : "M.S. in Materials Science & Engineering, Cornell Univeristy"
   location   : "Ithaca, NY"
   email      : "zw765@cornell.edu"
   links:
-    - label: "GitHub"
-      icon : "fab fa-fw fa-github"
-      url  : "https://github.com/ZuomingWang"
     - label: "<i class='ai ai-orcid' aria-hidden='true'></i> ORCID"
       icon : null
       url  : "https://orcid.org/0009-0006-3696-9034"
+    - label: "GitHub"
+      icon : "fab fa-fw fa-github"
+      url  : "https://github.com/ZuomingWang"
+
       
 
 ############################
