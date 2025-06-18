@@ -6,9 +6,9 @@ permalink: /about/
 ---
 ---
 <div style="font-size: 1.2em; text-align: center; line-height: 1.6;">
-I am an <strong>M.S. candidate in Materials Science</strong> passionate about combining AI/ML  
-with experimental and computational methods to accelerate the discovery of  
-energy, electronic, and biomedical materials...
+I am passionate about <strong>combining AI/ML</strong>  
+with experimental and computational methods to accelerate the discovery of 
+electronic, energy and biomedical materials...
 </div>
 
 <br/>
@@ -27,12 +27,11 @@ energy, electronic, and biomedical materials...
 <div style="column-count: 2; column-gap: 3em; font-size: 1em;">
 <ul>
   <li><strong>AI/ML-guided</strong> materials discovery</li>
-  <li><strong>Degradable zwitterionic hydrogels</strong> for brain implants</li>
-  <li><strong>DFT/MD </strong>simulations</li>
-  <li>fusion structural materials</li>
-  <li><strong>Spintronics</strong> & magnetic thin films</li>
+  <li><strong>Degradable zwitterionic hydrogels</strong> for brain implants</li>  
   <li><strong>Electronic materials</strong></li>
-  <li><strong>Electrochemistry</strong></li>
+  <li><strong>Spintronics</strong> & magnetic thin films</li>
+  <li><strong>Electrochemistry</strong></li>  
+  <li>Fusion structural materials</li>
 </ul>
 </div>
 
@@ -43,7 +42,7 @@ energy, electronic, and biomedical materials...
 
 ### Cornell
 
-- Synthesized **zwitterionic hydrogels** for brain implants  
+- Synthesized zwitterionic hydrogels for **brain implants**  
   ↳ Focused on stem cell viability and immune response  
 - Applied **computational chemistry** using  
   ↳ MCMC, Ising models, and neural networks...  
@@ -66,9 +65,9 @@ energy, electronic, and biomedical materials...
 ## 📘 Teaching & Grading Experience
 
 - Mentor in **Jiang Lab**, Cornell Engineering
-- Grader for **Introduction to Computing with Python**  
-- Grader for **Differential and Integral Calculus 1M**
-- Peer tutor for **preparatory math and physics**
+- Grader for Introduction to Computing with **Python**  
+- Grader for Differential and Integral **Calculus 1M**
+- Peer tutor for preparatory **math and physics**
 
 ---
 

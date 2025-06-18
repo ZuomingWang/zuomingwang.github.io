@@ -11,5 +11,6 @@ permalink: /publications/
 *{{ p.venue }}*  
 {% if p.url_pdf %}[PDF]({{ p.url_pdf }}){% endif %}{% if p.url_code %} | [Code]({{ p.url_code }}){% endif %}
 
+---
 {% endif %}
 {% endfor %}
