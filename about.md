@@ -38,7 +38,7 @@ permalink: /about/
 * First-author work on **electrochemical hydrogen accumulation**  
 * Co-authored study on **spintronic multilayers**
 
-## 📘 Teaching & Grading
+## 📘 Teaching
 * Mentor in [**Jiang Lab**](https://jgroup.bme.cornell.edu), Cornell Engineering  
 * Grader: **Intro to Computing (Python)**  
 * Grader: Calculus 1M (Differential & Integral)  
