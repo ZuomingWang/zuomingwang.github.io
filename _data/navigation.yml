@@ -6,3 +6,5 @@ main:
     url: /news/
   - title: "Publications"
     url: /publications/
+  - title: "ORCID"
+    url: https://orcid.org/0009-0006-3696-9034
