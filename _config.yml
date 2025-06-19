@@ -34,7 +34,7 @@ search_full_content    : true
 author:
   name       : "Zuoming Wang"
   avatar     : "/assets/images/zuoming.jpg"
-  bio        : "M.S. in Materials Science & Engineering, Cornell Univeristy"
+  bio        : "M.S. at Cornell"
   location   : "Ithaca, NY"
   email      : "zw765@cornell.edu"
   links:

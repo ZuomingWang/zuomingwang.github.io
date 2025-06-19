@@ -14,7 +14,7 @@ permalink: /about/
 
 
 
-## 🔬 Research Interests
+## Research Interests
 * **AI/ML-guided** materials discovery  
 * **Degradable zwitterionic hydrogels** for brain implants  
 * **Electronic materials**  
@@ -22,14 +22,13 @@ permalink: /about/
 * **Electrochemistry**  
 * Fusion structural materials
 
-## 🧪 Research Background
+## Research Background
 
 ### Cornell
 * Synthesized zwitterionic hydrogels for **brain implants**  
   ↳ Focus on stem cell viability and immune response  
 * Contributed in artificial lung coatings in CMU–Cornell collaboration
 * Applied **computational chemistry** using MCMC, Ising models, neural networks...
-
 
 ### Technion
 * Performed **DFT / MD simulations**  
@@ -38,7 +37,7 @@ permalink: /about/
 * First-author work on **electrochemical hydrogen accumulation**  
 * Co-authored study on **spintronic multilayers**
 
-## 📘 Teaching
+## Teaching
 * Mentor in [**Jiang Lab**](https://jgroup.bme.cornell.edu), Cornell Engineering  
 * Grader: **Intro to Computing (Python)**  
 * Grader: Calculus 1M (Differential & Integral)  
