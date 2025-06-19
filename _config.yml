@@ -67,6 +67,7 @@ og_image : "https://zuomingwang.github.io/assets/images/zuoming.jpg"   # 社交�
 include:
   - .htaccess
   - _pages
+  - favicon_z.ico
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
