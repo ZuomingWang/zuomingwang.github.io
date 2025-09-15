@@ -4,19 +4,185 @@
 
 // Typography
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-em,
+// Custom body styling
+body {
+  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--global-text-color);
+}
+
+// General heading styles
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: var(--global-text-color);
+  line-height: 1.3;
+  text-align: left;
+}
+
+// Left-align the intro/about page title
+.post-title {
+  text-align: left;
+}
+
+// Individual heading sizes
+h1 { 
+  font-size: 2.25rem;  // 36px (decreased from 44px)
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+h2 { 
+  font-size: 1.875rem;  // 30px (decreased from 36px)
+  font-weight: 400;
+  margin-top: 2.5rem;
+  line-height: 1.25;
+}
+
+h3 { 
+  font-size: 1.5rem; // 24px (decreased from 30px)
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.25rem; // 20px (decreased from 24px)
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h5, h6 {
+  font-size: 1.125rem; // 18px (decreased from 20px)
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+// Paragraph styling
+p {
+  margin-bottom: 1rem;
+  color: var(--global-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+// Text emphasis
+strong, b {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
+em, i {
+  color: var(--global-text-color);
+}
+
 div,
 li,
-span,
-strong {
+span {
   color: var(--global-text-color);
+}
+
+// Article content (for intro/about page)
+article {
+  font-weight: 400;
+  
+  p, div, span {
+    font-weight: 400;
+  }
+}
+
+// List styling
+ul, ol {
+  margin-bottom: 1rem;
+  
+  li {
+    margin-bottom: 0;
+    color: var(--global-text-color);
+    line-height: 1.7;
+    font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+  }
+}
+
+// News section styling
+.news {
+  font-size: 15px;
+  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  
+  td {
+    color: var(--global-text-color);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  .date {
+    color: var(--global-text-color-light);
+    font-weight: 400;
+  }
+  
+  table {
+    font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  // New year-grouped layout styles
+  .news-year-group {
+    margin-bottom: 1rem;
+  }
+  
+  .news-year {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    letter-spacing: 0.03em;
+    font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  .news-list {
+    list-style: none;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    
+    .news-item {
+      margin-bottom: 0;
+      position: relative;
+      padding-left: 1.2rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--global-text-color);
+        font-weight: bold;
+      }
+      
+      .news-content {
+        color: var(--global-text-color);
+        font-size: 17px;
+        line-height: 1.7;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 hr {
@@ -194,11 +360,22 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
+  text-align: center;
+
+  h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-align: center; // Keep profile name centered since it's inside .profile which already centers
+  }
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
 
     p {
       display: inline-block;
@@ -285,6 +462,9 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -497,10 +677,11 @@ footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
   padding-top: 40px;
   padding-bottom: 40px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 200;
 
   .container {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -701,7 +882,6 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -709,13 +889,18 @@ footer.sticky-bottom {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 600;
   }
 
   h2 {
     margin-bottom: 1rem;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 500;
 
     span {
       font-size: 1.5rem;
+      font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
   }
 
@@ -725,18 +910,22 @@ footer.sticky-bottom {
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
   ol.bibliography {
     list-style: none;
     padding: 0;
     margin-top: 0;
+    font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
     li {
       margin-bottom: 1rem;
+      line-height: 1.6;
+      color: var(--global-text-color);
+      font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 400;
 
-      .preview {
-      }
 
       .abbr {
         margin-bottom: 0.5rem;
@@ -763,7 +952,7 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 500;
       }
 
       .author {

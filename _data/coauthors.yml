@@ -32,3 +32,15 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"paul":
+  - firstname: ["Amitesh"]
+    url: https://scholar.google.com/citations?user=rRM0xsMAAAAJ&hl=en
+
+"baron":
+  - firstname: ["Aleksandra", "Aleks"]
+    url: https://scholar.google.com/citations?user=1Z1uD2IAAAAJ&hl=en
+
+"jiang":
+  - firstname: ["Shaoyi"]
+    url: https://scholar.google.com/citations?user=OO_hOZ4AAAAJ&hl=en&oi=ao
