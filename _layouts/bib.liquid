@@ -189,17 +189,14 @@
     <div class="links">
       <!-- PAPER links first -->
       {% if entry.doi %}
-        {% if entry.key == 'xiao2024magnetic' %}
-          <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">PAPER</a>
-        {% else %}
-          <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
-        {% endif %}
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.paper %}
+        {% assign paper_label = entry.paper_label | default: 'PAPER' %}
         {% if entry.paper contains '://' %}
-          <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">PAPER</a>
+          <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">{{ paper_label }}</a>
         {% else %}
-          <a href="{{ entry.paper | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PAPER</a>
+          <a href="{{ entry.paper | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ paper_label }}</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}

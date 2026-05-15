@@ -39,7 +39,11 @@
 
 "baron":
   - firstname: ["Aleksandra", "Aleks"]
-    url: https://scholar.google.com/citations?user=1Z1uD2IAAAAJ&hl=en
+    url: https://scholar.google.com/citations?hl=en&user=1Z1uD2IAAAAJ&view_op=list_works&sortby=pubdate
+
+"baron-wiechec":
+  - firstname: ["Aleksandra", "Aleks"]
+    url: https://scholar.google.com/citations?hl=en&user=1Z1uD2IAAAAJ&view_op=list_works&sortby=pubdate
 
 "jiang":
   - firstname: ["Shaoyi"]
