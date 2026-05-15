@@ -6,10 +6,69 @@ img: assets/img/projects_mobile_automation/Picture12.png
 importance: 2
 category: fun
 related_publications: false
+_styles: |
+  .post-title {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .post article figure,
+  .post article picture,
+  .post article img {
+    max-width: 100%;
+  }
+
+  .post article .row > [class*="col-"] {
+    min-width: 0;
+  }
+
+  .mobile-automation-media-grid {
+    --mobile-automation-media-height: 290px;
+    row-gap: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-automation-media-grid figure,
+  .mobile-automation-media-grid picture {
+    display: block;
+    height: 100%;
+    margin: 0;
+  }
+
+  .mobile-automation-media-grid img {
+    width: 100%;
+    height: var(--mobile-automation-media-height) !important;
+    object-fit: contain;
+    object-position: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    background-color: var(--global-card-bg-color);
+  }
+
+  .mobile-automation-media-grid--single {
+    --mobile-automation-media-height: 310px;
+  }
+
+  .mobile-automation-media-grid--three {
+    --mobile-automation-media-height: 245px;
+  }
+
+  @media (max-width: 575.98px) {
+    .post-title {
+      font-size: 2rem;
+    }
+
+    .mobile-automation-media-grid,
+    .mobile-automation-media-grid--single,
+    .mobile-automation-media-grid--three {
+      --mobile-automation-media-height: 230px;
+    }
+  }
 ---
 
 <div class="row justify-content-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-12 col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture12.png" title="Mobile Automation Robot" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -39,7 +98,7 @@ The robot system consists of several integrated components:
 The robot is equipped with bumping and depth sensors for environment perception and obstacle detection.
 
 <div class="row justify-content-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-12 col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture2.png" title="Robot Sensors" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -51,18 +110,18 @@ The robot is equipped with bumping and depth sensors for environment perception 
 ### (2) Localization
 The system implements two complementary localization algorithms:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture3.png" title="EKF Localization" class="img-fluid rounded z-depth-1" style="height: 300px; object-fit: contain;" %}
+<div class="row mobile-automation-media-grid">
+    <div class="col-12 col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture3.png" title="EKF Localization" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture4.png" title="Particle Filter" class="img-fluid rounded z-depth-1" style="height: 300px; object-fit: contain;" %}
+    <div class="col-12 col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture4.png" title="Particle Filter" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
-<div class="row justify-content-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture5.png" title="Localization Results" class="img-fluid rounded z-depth-1" style="height: 300px; object-fit: contain;" %}
+<div class="row justify-content-center mobile-automation-media-grid mobile-automation-media-grid--single">
+    <div class="col-12 col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture5.png" title="Localization Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -73,12 +132,12 @@ The system implements two complementary localization algorithms:
 ### (3) Mapping
 Simultaneous Localization and Mapping (SLAM) using sensor data:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture6.jpg" title="Mapping Process" class="img-fluid rounded z-depth-1" %}
+<div class="row mobile-automation-media-grid">
+    <div class="col-12 col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture6.png" title="Mapping Process" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture7.jpg" title="Generated Map" class="img-fluid rounded z-depth-1" %}
+    <div class="col-12 col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture7.png" title="Generated Map" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -89,11 +148,11 @@ Simultaneous Localization and Mapping (SLAM) using sensor data:
 ### (4) Path Planning
 Advanced navigation algorithms for efficient waypoint traversal:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row mobile-automation-media-grid">
+    <div class="col-12 col-md-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture8.png" title="Potential Field Navigation" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-12 col-md-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture9.png" title="RRT Planning" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -105,15 +164,15 @@ Advanced navigation algorithms for efficient waypoint traversal:
 ### (5) Tuning and Optimization
 System parameter optimization and performance enhancement:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row mobile-automation-media-grid mobile-automation-media-grid--three">
+    <div class="col-12 col-lg-4 col-md-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture10.png" title="Parameter Tuning" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture11.png" title="Performance Analysis" class="img-fluid rounded z-depth-1" style="height: 250px; object-fit: contain;" %}
+    <div class="col-12 col-lg-4 col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture11.png" title="Performance Analysis" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture12.png" title="Final Results" class="img-fluid rounded z-depth-1" style="height: 100px; object-fit: contain;" %}
+    <div class="col-12 col-lg-4 col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture12.png" title="Final Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -164,7 +223,7 @@ System parameter optimization and performance enhancement:
 
 
 <div class="row justify-content-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-12 col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects_mobile_automation/Picture1.png" title="System Overview" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
