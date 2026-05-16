@@ -95,9 +95,27 @@ d-article {
     nav {
       grid-column: toc;
       a {
+        display: block;
+        margin-left: -0.65rem;
+        padding: 0.18rem 0.45rem 0.18rem 0.55rem;
+        border-left: 2px solid transparent;
         border-bottom: none !important;
+        border-radius: 3px;
+        color: var(--global-text-color-light) !important;
+        transition:
+          color 140ms ease,
+          background-color 140ms ease,
+          border-left-color 140ms ease;
         &:hover {
-          border-bottom: 1px solid var(--global-text-color) !important;
+          border-bottom: none !important;
+          color: var(--global-theme-color) !important;
+          background-color: var(--global-card-bg-color);
+        }
+        &.active {
+          border-left-color: var(--global-theme-color);
+          color: var(--global-theme-color) !important;
+          background-color: var(--global-card-bg-color);
+          font-weight: 600;
         }
       }
       h3 {
@@ -147,6 +165,11 @@ d-article {
       color: var(--global-hover-color) !important;
     }
   }
+}
+
+d-article h2,
+d-article h3 {
+  scroll-margin-top: 6.5rem;
 }
 
 d-appendix {
