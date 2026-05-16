@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-labelledby="title desc">
+  <title id="title">A-Lab and Leeman XRD residual comparison</title>
+  <desc id="desc">Annotated schematic comparing the A-Lab Mg3MnNi3O8 claim with the Leeman reinterpretation and residual plots.</desc>
+  <rect width="900" height="1120" fill="#ffffff"/>
+
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .axis { stroke: #222; stroke-width: 2; fill: none; }
+      .grid { stroke: #ececec; stroke-width: 1; }
+      .tick { stroke: #111; stroke-width: 2; }
+      .minor-tick { stroke: #777; stroke-width: 1.4; }
+      .fit { stroke: #0b27ff; stroke-width: 2.4; fill: none; }
+      .fit-green { stroke: #1fbf63; stroke-width: 2.4; fill: none; }
+      .obs { fill: #078f44; stroke: #078f44; }
+      .obs-blue { fill: #1643ff; stroke: #1643ff; }
+      .diff { stroke: #36cdd0; stroke-width: 2; fill: none; }
+      .residual-red { stroke: #ff2020; stroke-width: 2; fill: none; }
+      .label { font-family: Arial, Helvetica, sans-serif; fill: #111; }
+      .purple { fill: #7d38ad; font-weight: 700; }
+      .red { fill: #d30000; font-weight: 700; }
+      .blue { fill: #3186d0; }
+      .gold { fill: #b88700; }
+    </style>
+  </defs>
+
+  <text x="54" y="48" class="label purple" font-size="40">A-Lab Claim:</text>
+  <text x="315" y="48" class="label" font-size="40">Mg3MnNi3O8</text>
+
+  <rect x="34" y="70" width="832" height="360" fill="#fbfbfb" stroke="#222" stroke-width="2"/>
+  <line x1="110" y1="70" x2="110" y2="430" class="grid"/>
+  <line x1="220" y1="70" x2="220" y2="430" class="grid"/>
+  <line x1="330" y1="70" x2="330" y2="430" class="grid"/>
+  <line x1="440" y1="70" x2="440" y2="430" class="grid"/>
+  <line x1="550" y1="70" x2="550" y2="430" class="grid"/>
+  <line x1="660" y1="70" x2="660" y2="430" class="grid"/>
+  <line x1="770" y1="70" x2="770" y2="430" class="grid"/>
+  <line x1="34" y1="410" x2="866" y2="410" class="axis"/>
+
+  <path d="M34 384 C80 386 110 387 116 384 C125 382 126 286 128 263 C131 315 130 376 138 383 C160 391 245 388 250 386 C256 383 259 305 262 304 C266 303 270 380 278 385 C300 390 316 389 320 386 C324 382 326 309 330 306 C335 303 337 382 346 386 C370 389 410 388 416 384 C421 380 424 165 428 150 C433 180 435 365 444 383 C470 390 528 386 531 384 C537 379 539 349 543 349 C549 350 549 378 553 384 C568 388 596 388 600 384 C607 374 608 278 613 250 C618 281 618 374 624 383 C650 391 708 388 713 384 C718 380 721 360 725 358 C731 360 730 379 736 384 C762 390 794 388 799 385 C804 382 806 366 810 365 C816 368 814 382 820 385 C840 389 856 388 866 387" class="fit"/>
+  <path d="M34 380 C90 382 170 381 220 386 C242 388 256 383 262 313 C266 297 273 294 278 316 C285 383 307 383 320 312 C326 286 337 280 346 314 C354 384 400 386 416 380 C422 344 424 102 428 92 C434 104 434 292 440 330 C448 389 526 385 533 375 C537 352 541 340 545 353 C550 386 593 386 600 371 C606 279 610 248 614 255 C619 266 618 352 624 382 C640 389 707 385 712 374 C718 358 721 354 726 361 C732 386 789 383 800 374 C808 365 814 364 820 378 C832 389 851 386 866 387" class="fit-green"/>
+
+  <g>
+    <circle cx="128" cy="322" r="4" class="obs"/>
+    <circle cx="128" cy="319" r="4" class="obs"/>
+    <circle cx="240" cy="331" r="4" class="obs"/>
+    <circle cx="240" cy="358" r="4" class="obs"/>
+    <circle cx="292" cy="308" r="4" class="obs"/>
+    <circle cx="292" cy="282" r="4" class="obs"/>
+    <circle cx="306" cy="267" r="4" class="obs"/>
+    <circle cx="321" cy="306" r="4" class="obs"/>
+    <circle cx="321" cy="279" r="4" class="obs"/>
+    <circle cx="427" cy="312" r="4" class="obs"/>
+    <circle cx="428" cy="269" r="4" class="obs"/>
+    <circle cx="429" cy="235" r="4" class="obs"/>
+    <circle cx="429" cy="96" r="4" class="obs"/>
+    <circle cx="429" cy="112" r="4" class="obs"/>
+    <circle cx="545" cy="358" r="4" class="obs"/>
+    <circle cx="546" cy="350" r="4" class="obs"/>
+    <circle cx="614" cy="320" r="4" class="obs"/>
+    <circle cx="614" cy="302" r="4" class="obs"/>
+    <circle cx="613" cy="254" r="4" class="obs"/>
+    <circle cx="726" cy="356" r="4" class="obs"/>
+    <circle cx="760" cy="356" r="4" class="obs"/>
+    <circle cx="822" cy="382" r="4" class="obs"/>
+  </g>
+
+  <text x="146" y="151" class="label red" font-size="26">Assignment</text>
+  <text x="146" y="186" class="label red" font-size="26">peaks</text>
+  <text x="103" y="238" class="label red" font-size="24">1</text>
+  <text x="213" y="327" class="label red" font-size="24">2</text>
+  <text x="255" y="247" class="label red" font-size="24">3</text>
+  <text x="289" y="246" class="label red" font-size="24">4</text>
+  <text x="443" y="142" class="label red" font-size="24">5</text>
+
+  <g>
+    <circle cx="700" cy="106" r="5" class="obs"/>
+    <text x="735" y="114" class="label" font-size="28">obs</text>
+    <line x1="685" y1="150" x2="720" y2="150" class="fit"/>
+    <text x="735" y="160" class="label" font-size="28">fit</text>
+  </g>
+
+  <g>
+    <line x1="110" y1="406" x2="110" y2="425" class="minor-tick"/>
+    <line x1="138" y1="406" x2="138" y2="425" class="minor-tick"/>
+    <line x1="221" y1="406" x2="221" y2="425" class="tick"/>
+    <line x1="273" y1="406" x2="273" y2="425" class="tick"/>
+    <line x1="288" y1="406" x2="288" y2="425" class="tick"/>
+    <line x1="429" y1="406" x2="429" y2="425" class="minor-tick"/>
+    <line x1="465" y1="406" x2="465" y2="425" class="tick"/>
+    <line x1="477" y1="406" x2="477" y2="425" class="tick"/>
+    <line x1="526" y1="406" x2="526" y2="425" class="tick"/>
+    <line x1="558" y1="406" x2="558" y2="425" class="tick"/>
+    <line x1="610" y1="406" x2="610" y2="425" class="minor-tick"/>
+    <line x1="644" y1="406" x2="644" y2="425" class="tick"/>
+    <line x1="654" y1="406" x2="654" y2="425" class="tick"/>
+    <line x1="692" y1="406" x2="692" y2="425" class="tick"/>
+    <line x1="722" y1="406" x2="722" y2="425" class="tick"/>
+    <line x1="735" y1="406" x2="735" y2="425" class="tick"/>
+    <line x1="780" y1="406" x2="780" y2="425" class="tick"/>
+    <line x1="810" y1="406" x2="810" y2="425" class="tick"/>
+    <line x1="855" y1="406" x2="855" y2="425" class="tick"/>
+  </g>
+
+  <text x="672" y="485" class="label purple" font-size="38">Leeman</text>
+  <line x1="34" y1="500" x2="866" y2="500" stroke="#f1f1f1" stroke-width="4"/>
+
+  <g transform="translate(0 435)">
+    <line x1="34" y1="250" x2="866" y2="250" class="axis"/>
+    <line x1="34" y1="395" x2="866" y2="395" class="axis"/>
+    <path d="M34 160 C90 162 120 162 128 156 C135 148 132 106 138 96 C144 121 142 151 150 157 C175 163 220 161 226 155 C232 150 234 126 240 125 C246 127 246 151 252 157 C275 162 292 158 296 152 C303 128 302 96 308 91 C315 101 315 148 323 157 C345 164 398 162 410 156 C420 148 421 67 429 48 C438 71 435 142 446 156 C474 164 522 162 532 155 C539 149 540 129 546 128 C552 130 552 150 560 156 C586 163 607 158 612 149 C620 111 617 84 624 78 C632 91 630 145 640 156 C666 164 712 161 719 155 C727 145 727 133 734 132 C741 135 741 149 749 156 C778 163 801 160 810 154 C818 149 821 142 827 143 C834 147 834 157 846 160 L866 160" class="fit-green"/>
+    <path d="M34 161 C90 165 122 161 128 158 C132 151 134 101 139 98 C144 106 142 151 150 159 C176 163 220 161 226 156 C232 151 234 128 240 126 C246 128 246 151 252 158 C274 162 292 157 296 153 C303 130 302 98 308 93 C315 102 315 148 323 158 C344 163 399 161 410 157 C420 150 421 68 429 49 C438 72 435 142 446 157 C474 163 523 162 532 156 C540 150 540 130 546 129 C552 131 552 151 560 157 C586 164 607 158 612 150 C620 112 617 85 624 80 C632 93 630 145 640 157 C667 164 712 162 719 156 C727 146 727 134 734 133 C741 136 741 150 749 157 C779 164 802 160 810 155 C818 150 821 143 827 144 C835 148 835 157 846 160 L866 160" class="fit"/>
+    <path d="M34 265 C82 266 113 265 126 262 C132 256 134 219 140 221 C145 228 141 270 151 268 C186 260 212 265 225 268 C233 276 233 287 241 287 C250 286 247 272 253 267 C272 259 292 263 296 272 C304 288 306 326 314 326 C323 326 318 282 326 268 C345 255 397 259 411 265 C421 269 424 321 431 319 C438 318 435 274 446 268 C476 258 522 263 533 267 C541 270 542 293 548 293 C555 292 552 270 561 267 C587 257 608 264 614 274 C621 291 618 318 626 318 C635 317 630 280 641 268 C668 258 712 262 720 268 C727 273 728 285 735 286 C743 286 740 274 750 268 C779 259 803 264 811 268 C820 273 823 283 829 283 C837 282 834 270 846 267 L866 267" class="diff"/>
+    <g>
+      <circle cx="128" cy="157" r="3.2" class="obs-blue"/>
+      <circle cx="139" cy="99" r="3.2" class="obs-blue"/>
+      <circle cx="240" cy="126" r="3.2" class="obs-blue"/>
+      <circle cx="307" cy="93" r="3.2" class="obs-blue"/>
+      <circle cx="429" cy="49" r="3.2" class="obs-blue"/>
+      <circle cx="546" cy="129" r="3.2" class="obs-blue"/>
+      <circle cx="624" cy="80" r="3.2" class="obs-blue"/>
+      <circle cx="734" cy="133" r="3.2" class="obs-blue"/>
+      <circle cx="827" cy="144" r="3.2" class="obs-blue"/>
+    </g>
+    <g>
+      <text x="68" y="72" class="label" font-size="26">+</text>
+      <text x="68" y="118" class="label" font-size="26">obs</text>
+      <line x1="62" y1="158" x2="84" y2="158" class="fit-green"/>
+      <text x="110" y="166" class="label" font-size="26">fit</text>
+    </g>
+    <text x="366" y="251" class="label blue" font-size="24">Leeman residuals</text>
+    <rect x="660" y="455" width="214" height="96" fill="none" stroke="#f3c847" stroke-width="4"/>
+    <text x="718" y="94" class="label gold" font-size="30">indexing</text>
+    <path d="M696 84 L563 18" stroke="#ffd85c" stroke-width="4" fill="none"/>
+    <path d="M784 102 L776 445" stroke="#ffd85c" stroke-width="4" fill="none"/>
+    <g>
+      <line x1="115" y1="396" x2="115" y2="415" class="minor-tick"/>
+      <line x1="220" y1="396" x2="220" y2="415" class="tick"/>
+      <line x1="275" y1="396" x2="275" y2="415" class="tick"/>
+      <line x1="290" y1="396" x2="290" y2="415" class="tick"/>
+      <line x1="429" y1="396" x2="429" y2="415" class="minor-tick"/>
+      <line x1="465" y1="396" x2="465" y2="415" class="tick"/>
+      <line x1="477" y1="396" x2="477" y2="415" class="tick"/>
+      <line x1="526" y1="396" x2="526" y2="415" class="tick"/>
+      <line x1="558" y1="396" x2="558" y2="415" class="tick"/>
+      <line x1="610" y1="396" x2="610" y2="415" class="minor-tick"/>
+      <line x1="644" y1="396" x2="644" y2="415" class="tick"/>
+      <line x1="654" y1="396" x2="654" y2="415" class="tick"/>
+      <line x1="692" y1="396" x2="692" y2="415" class="tick"/>
+      <line x1="722" y1="396" x2="722" y2="415" class="tick"/>
+      <line x1="735" y1="396" x2="735" y2="415" class="tick"/>
+      <line x1="780" y1="396" x2="780" y2="415" class="tick"/>
+      <line x1="810" y1="396" x2="810" y2="415" class="tick"/>
+      <line x1="855" y1="396" x2="855" y2="415" class="tick"/>
+    </g>
+    <path d="M34 480 C82 482 104 479 116 478 C123 471 128 424 133 424 C140 424 139 472 149 479 C181 482 213 480 224 479 C235 479 234 516 241 516 C251 516 248 482 258 480 C274 478 288 478 296 481 C303 485 303 556 313 556 C325 556 318 485 328 480 C351 477 399 480 411 479 C421 477 423 544 432 544 C440 544 437 485 448 479 C474 477 523 478 533 480 C542 482 542 522 549 522 C557 522 554 485 562 480 C587 477 607 478 614 480 C622 483 620 523 628 523 C637 522 632 485 642 480 C667 477 713 478 720 481 C729 485 728 507 736 507 C744 507 741 485 750 480 C779 477 803 478 811 481 C821 485 823 499 831 499 C839 499 837 485 846 480 L866 480" class="residual-red"/>
+    <text x="612" y="515" class="label red" font-size="27">A-Lab residuals</text>
+  </g>
+
+  <g class="label" font-size="38">
+    <text x="32" y="1088">10</text>
+    <text x="123" y="1088">20</text>
+    <text x="215" y="1088">30</text>
+    <text x="306" y="1088">40</text>
+    <text x="398" y="1088">50</text>
+    <text x="490" y="1088">60</text>
+    <text x="582" y="1088">70</text>
+    <text x="674" y="1088">80</text>
+    <text x="766" y="1088">90</text>
+    <text x="840" y="1088">100</text>
+    <text x="400" y="1114" font-size="42">2theta</text>
+  </g>
+</svg>

@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
           title: "publications",
           description: "publications by categories in reversed chronological order.",
           section: "Navigation",
@@ -23,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-why-a-good-xrd-fit-is-not-a-phase-identification",
+        
+          title: "Why a Good XRD Fit Is Not a Phase Identification",
+        
+        description: "A short note on the A-Lab debate, Leeman et al., and evidence standards for automated diffraction analysis",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/xrd-phase-identification-good-fit/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -419,16 +437,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-probestationprocessor",
-          title: 'ProbeStationProcessor',
+            },},{id: "projects-probe-station-processor",
+          title: 'Probe Station Processor',
           description: "Voltage-Current Data Processing Tool for Molecular Electronics",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ProbeStationProvessor/";
-            },},{id: "projects-mobileautomationrobot",
-          title: 'MobileAutomationRobot',
-          description: "Robot Localization and Navigation System",
+            },},{id: "projects-mobile-automation-robot",
+          title: 'Mobile Automation Robot',
+          description: "Robot localization, mapping, and navigation from noisy sensors",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mobile_automation/";
+            },},{id: "projects-xrd-phase-identification",
+          title: 'XRD Phase Identification',
+          description: "What can go wrong when diffraction fits are treated as phase proof",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/xrd_phase_identification/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
