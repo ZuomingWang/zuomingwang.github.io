@@ -58,7 +58,7 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: |
-          printf "external_sources: []\n" > /tmp/no-external-sources.yml
+          printf "external_sources: []\nimagemagick:\n  enabled: false\n" > /tmp/no-external-sources.yml
           bundle exec jekyll build --trace --config _config.yml,/tmp/no-external-sources.yml
           test -d _site && echo "Build OK" || (echo "_site missing"; exit 1)
 
