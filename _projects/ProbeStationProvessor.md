@@ -1,20 +1,139 @@
 ---
-layout: page
-title: ProbeStationProcessor
+layout: distill
+title: Probe Station Processor
 description: Voltage-Current Data Processing Tool for Molecular Electronics
 img: https://github.com/user-attachments/assets/2985bac4-72ec-43c6-bedc-91913781bb02
 importance: 1
 category: work
 related_publications: false
+date: 2023-05-22 09:00:00-0500
+bibliography: probe-station-processor.bib
+authors:
+  - name: Zuoming Wang
+    url: "https://zuomingwang.github.io/"
+    affiliations:
+      name: Guangdong Technion
+toc:
+  - name: Overview
+  - name: Input Files
+  - name: Processing Steps
+  - name: Output Files
+  - name: Usage Instructions
+  - name: Additional Notes
+_styles: |
+  d-title h1 {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  d-title p {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-weight: 400 !important;
+  }
+
+  d-byline .byline p,
+  d-byline .byline p.author,
+  d-byline .byline p.affiliation,
+  d-byline .byline p a,
+  d-byline .byline p span {
+    font-size: 0.78rem !important;
+    font-weight: 400 !important;
+    line-height: 1.45 !important;
+  }
+
+  d-article figure,
+  d-article picture,
+  d-article img {
+    max-width: 100%;
+  }
+
+  d-article h2 {
+    margin-top: 2.4rem;
+    padding-top: 0.4rem;
+  }
+
+  d-article p,
+  d-article li {
+    line-height: 1.75;
+  }
+
+  @media (min-width: 1025px) {
+    d-article {
+      contain: none !important;
+      overflow-x: visible !important;
+    }
+
+    d-article d-contents {
+      position: sticky !important;
+      top: 5.25rem !important;
+      grid-row: 1 / span 1000 !important;
+      align-self: start !important;
+      height: max-content;
+      max-height: calc(100vh - 6rem);
+      overflow-y: auto;
+      z-index: 2;
+    }
+
+    d-article d-contents nav {
+      position: sticky !important;
+      top: 5.25rem !important;
+    }
+  }
+
+  .psp-media {
+    grid-column: text;
+    margin: 1.25rem auto 1.8rem;
+  }
+
+  .psp-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    background-color: var(--global-card-bg-color);
+  }
+
+  .psp-media-hero img {
+    max-width: 680px;
+  }
+
+  .psp-media-pair {
+    grid-column: page;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    align-items: center;
+    max-width: 900px;
+  }
+
+  .psp-media-pair img {
+    max-height: 360px;
+  }
+
+  d-article table {
+    margin: 1.25rem 0 1.75rem;
+    font-size: 0.94rem;
+  }
+
+  d-article table th {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 575.98px) {
+    d-title h1 {
+      font-size: 2rem;
+    }
+
+    .psp-media-pair {
+      grid-template-columns: 1fr;
+    }
+  }
 ---
 
-<div align="center">
-<img src="https://github.com/user-attachments/assets/d7ed0973-76d3-4734-aa92-26364d391329" alt="image" width="70%">
+<div class="psp-media psp-media-hero">
+<img src="https://github.com/user-attachments/assets/d7ed0973-76d3-4734-aa92-26364d391329" alt="image">
 </div>
-
-## Author
-- **Name**: Zuoming Wang
-- **Date**: 22nd May 2023
 
 ## Overview
 
@@ -146,7 +265,7 @@ For support, refer to the script's comments or contact the author.
 
 **GitHub Repository**: [https://github.com/ZuomingWang/ProbeStationIVProcessor/tree/main](https://github.com/ZuomingWang/ProbeStationIVProcessor/tree/main)
 
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; width: 100%;">
-<img src="https://github.com/user-attachments/assets/2985bac4-72ec-43c6-bedc-91913781bb02" alt="demo_balanced" style="flex: 1; height: 400px; object-fit: contain;">
-<img src="https://github.com/user-attachments/assets/79093ca4-ab1b-4f0c-8db0-9a1993e1da02" alt="image" style="flex: 1; height: 400px; object-fit: contain;">
+<div class="psp-media psp-media-pair">
+<img src="https://github.com/user-attachments/assets/2985bac4-72ec-43c6-bedc-91913781bb02" alt="demo_balanced">
+<img src="https://github.com/user-attachments/assets/79093ca4-ab1b-4f0c-8db0-9a1993e1da02" alt="image">
 </div>
