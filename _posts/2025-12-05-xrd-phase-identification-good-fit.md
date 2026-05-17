@@ -93,7 +93,7 @@ For me, the useful lesson is narrower and more technical: **a fitted powder XRD 
 
 <div class="row justify-content-center xrd-blog-figure">
     <div class="col-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="references/A-lab_Leeman.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the A-Lab Mg3MnNi3O8 assignment and the Leeman et al. reinterpretation. The central issue is whether the assigned peaks, indexing ticks, and residuals support the claimed phase, not only whether the calculated curve follows the observed pattern." class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="references/A-lab_Leeman.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the reported Mg3MnNi3O8 XRD assignment. The upper panel shows the Leeman et al. reanalysis indexed to known Ni-Mn-O spinel and NiO phases, while the lower red trace shows the residuals from the A-Lab assignment. The yellow annotation highlights high-angle peaks where indexing provides an alternative explanation." class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

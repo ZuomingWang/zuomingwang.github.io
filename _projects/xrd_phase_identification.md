@@ -259,7 +259,7 @@ Powder XRD phase identification is often treated as a pattern-matching problem: 
 
 <div class="row justify-content-center xrd-media xrd-media-claim">
     <div class="col-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="lazy" path="references/A-lab_Leeman.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the A-Lab Mg3MnNi3O8 assignment and the Leeman et al. reinterpretation. The important evidence is not only whether a blue calculated curve follows the observed peaks, but whether the assigned reflections, indexing ticks, and residual structure support the claimed phase." class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="lazy" path="references/A-lab_Leeman.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the reported Mg3MnNi3O8 XRD assignment. The upper panel shows the Leeman et al. reanalysis indexed to known Ni-Mn-O spinel and NiO phases, while the lower red trace shows the residuals from the A-Lab assignment. The yellow annotation highlights high-angle peaks where indexing provides an alternative explanation." class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
