@@ -26,8 +26,10 @@ latest_posts:
 after_selected_papers: |
   <p>(listed in increasing order of number of characters in each bullet)</p>
   <ul>
-    <li>playing squash</li>
-    <li>cooking and making yogurt</li>
+    <li>biking</li>
+    <li>cooking</li>
+    <li>making yogurt</li>
+    <li>walking fast so that my legs heat up</li>
     <li>reading books - mostly non-fiction these days</li>
   </ul>
 ---
