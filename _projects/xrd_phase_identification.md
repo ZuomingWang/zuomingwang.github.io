@@ -2,7 +2,7 @@
 layout: distill
 title: XRD Phase Identification
 description: What can go wrong when diffraction fits are treated as phase proof
-img: assets/img/projects_xrd_phase_identification/mixture_model_fit.png
+img: assets/img/projects_xrd_phase_identification/A-lab_Leeman.png
 importance: 3
 category: fun
 bibliography: xrd-phase-identification-good-fit.bib
@@ -245,7 +245,7 @@ This project turns the A-Lab XRD phase-identification debate into a small reprod
 
 ## Project Goal
 
-This project uses a synthetic X-ray diffraction case study to discuss the phase-identification method criticized by Leeman *et al.* in their 2024 PRX Energy paper <d-cite key="leeman2024challenges"></d-cite> on A-Lab material claims <d-cite key="szymanski2023autonomous"></d-cite>. The focus is not only whether a candidate structure can be fitted to an XRD pattern, but whether that fit is enough to support a phase-identification or discovery claim.
+This project uses a synthetic X-ray diffraction case study to discuss the phase-identification method criticized by Leeman _et al._ in their 2024 PRX Energy paper <d-cite key="leeman2024challenges"></d-cite> on A-Lab material claims <d-cite key="szymanski2023autonomous"></d-cite>. The focus is not only whether a candidate structure can be fitted to an XRD pattern, but whether that fit is enough to support a phase-identification or discovery claim.
 
 The notebook turns the paper's methodological critique into a small reproducible exercise. It asks a practical question: when an XRD pattern appears compatible with a proposed new ordered phase, what checks are needed before accepting that phase assignment?
 
@@ -259,21 +259,21 @@ Powder XRD phase identification is often treated as a pattern-matching problem: 
 
 <div class="row justify-content-center xrd-media xrd-media-claim">
     <div class="col-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="lazy" path="references/a-lab.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the A-Lab Mg3MnNi3O8 assignment and the Leeman et al. reinterpretation. The important evidence is not only whether a blue calculated curve follows the observed peaks, but whether the assigned reflections, indexing ticks, and residual structure support the claimed phase." class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="lazy" path="references/A-lab_Leeman.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the A-Lab Mg3MnNi3O8 assignment and the Leeman et al. reinterpretation. The important evidence is not only whether a blue calculated curve follows the observed peaks, but whether the assigned reflections, indexing ticks, and residual structure support the claimed phase." class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
-This figure summarizes the methodological issue. In the A-Lab view, several peaks are treated as assignment peaks for the proposed `Mg3MnNi3O8` phase. Leeman *et al.* instead emphasize indexing against known phases and the residuals left after fitting. If residual features line up with unassigned or misassigned reflections, then the fit is telling us that the candidate model is incomplete. A visually convincing fit therefore remains only one piece of evidence; phase identification also needs local peak logic, competing phase models, and residual analysis.
+This figure summarizes the methodological issue. In the A-Lab view, several peaks are treated as assignment peaks for the proposed `Mg3MnNi3O8` phase. Leeman _et al._ instead emphasize indexing against known phases and the residuals left after fitting. If residual features line up with unassigned or misassigned reflections, then the fit is telling us that the candidate model is incomplete. A visually convincing fit therefore remains only one piece of evidence; phase identification also needs local peak logic, competing phase models, and residual analysis.
 
 The main risks are:
 
-| Risk | Why it matters |
-|:-----|:---------------|
-| Good global fit, wrong local evidence | A low error metric can hide missing or misplaced peaks that are chemically decisive. |
-| Confirmation-only fitting | Fitting only the proposed phase can make a discovery claim look stronger than it is. |
-| Ignoring known alternatives | A mixture of known phases may explain the pattern better than a new compound. |
+| Risk                                          | Why it matters                                                                                                         |
+| :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| Good global fit, wrong local evidence         | A low error metric can hide missing or misplaced peaks that are chemically decisive.                                   |
+| Confirmation-only fitting                     | Fitting only the proposed phase can make a discovery claim look stronger than it is.                                   |
+| Ignoring known alternatives                   | A mixture of known phases may explain the pattern better than a new compound.                                          |
 | Over-weighting or under-weighting small peaks | Weak ordering peaks can decide a cation-ordering claim, while minor impurity peaks may mostly indicate sample quality. |
-| Treating flexible fits as identification | Free Gaussian peaks can fit the pattern well, but they do not identify a crystal phase. |
+| Treating flexible fits as identification      | Free Gaussian peaks can fit the pattern well, but they do not identify a crystal phase.                                |
 
 ## Notebook Design
 
@@ -287,12 +287,12 @@ The notebook builds a synthetic powder-diffraction pattern with five Gaussian pe
 
 The exercise compares four models:
 
-| Model | Hypothesis | Purpose |
-|:------|:-----------|:--------|
-| Model 0 | Five unconstrained Gaussian peaks | A flexible diagnostic baseline, not a phase assignment |
-| Model 1 | Ordered `Mg3MnNi3O8` plus background | The proposed new ordered-phase claim |
-| Model 2 | Disordered `Ni-Mn-O` plus background | A known single-phase alternative |
-| Model 3 | Disordered `Ni-Mn-O` plus `NiO` plus background | A known mixture alternative |
+| Model   | Hypothesis                                      | Purpose                                                |
+| :------ | :---------------------------------------------- | :----------------------------------------------------- |
+| Model 0 | Five unconstrained Gaussian peaks               | A flexible diagnostic baseline, not a phase assignment |
+| Model 1 | Ordered `Mg3MnNi3O8` plus background            | The proposed new ordered-phase claim                   |
+| Model 2 | Disordered `Ni-Mn-O` plus background            | A known single-phase alternative                       |
+| Model 3 | Disordered `Ni-Mn-O` plus `NiO` plus background | A known mixture alternative                            |
 
 The model set is intentionally simple, but it captures the logic of the paper's critique: phase identification requires comparing the proposed material against plausible known alternatives, not just checking whether the proposed model can be made to fit.
 
@@ -318,12 +318,12 @@ Model 0 fits the synthetic pattern best numerically, which is expected because i
 
 Among the phase-constrained models, Model 3 is the strongest explanation. It fits the data better than the ordered `Mg3MnNi3O8` model and better than the single disordered `Ni-Mn-O` model.
 
-| Model | RSS | Chi-square | Reduced chi-square | AIC |
-|:------|---:|-----------:|-------------------:|----:|
-| Model 0 | 1.5259 | 3,814.8 | 1.9180 | -14,334.6 |
-| Model 1 | 27.6514 | 69,128.5 | 34.6335 | -8,554.45 |
-| Model 2 | 21.1439 | 52,859.7 | 26.4828 | -9,091.10 |
-| Model 3 | 19.4478 | 48,619.4 | 24.3706 | -9,256.34 |
+| Model   |     RSS | Chi-square | Reduced chi-square |       AIC |
+| :------ | ------: | ---------: | -----------------: | --------: |
+| Model 0 |  1.5259 |    3,814.8 |             1.9180 | -14,334.6 |
+| Model 1 | 27.6514 |   69,128.5 |            34.6335 | -8,554.45 |
+| Model 2 | 21.1439 |   52,859.7 |            26.4828 | -9,091.10 |
+| Model 3 | 19.4478 |   48,619.4 |            24.3706 | -9,256.34 |
 
 <div class="xrd-media xrd-media-results">
     <div class="xrd-result-figure">
@@ -336,9 +336,9 @@ Among the phase-constrained models, Model 3 is the strongest explanation. It fit
 
 The F-test comparing Model 2 and Model 3 gives:
 
-| Comparison | F statistic | p-value | Interpretation |
-|:-----------|------------:|--------:|:---------------|
-| Model 2 vs. Model 3 | 173.99 | < 1e-10 | Adding `NiO` gives a statistically significant improvement |
+| Comparison          | F statistic | p-value | Interpretation                                             |
+| :------------------ | ----------: | ------: | :--------------------------------------------------------- |
+| Model 2 vs. Model 3 |      173.99 | < 1e-10 | Adding `NiO` gives a statistically significant improvement |
 
 This supports the known-mixture explanation over the single disordered phase.
 
@@ -352,13 +352,13 @@ The known-mixture model is better, but it is still incomplete. It leaves structu
 
 The paper's broader critique maps onto the notebook in several concrete ways:
 
-| Problem | How it appears in the exercise |
-|:--------|:-------------------------------|
-| Positive hypothesis testing | Model 1 can be fitted, but fitting it alone would hide that known alternatives perform better. |
-| Missing alternative phases | Model 2 improves the physical story, and Model 3 improves it further by adding `NiO`. |
-| Local residuals matter | The 30 degree residual remains important even after Model 3 wins by global metrics. |
-| Small peaks can be decisive | The 18 degree ordering peak is central to the ordered-phase claim. |
-| Statistical fit is not scientific proof | Model 0 has excellent metrics but does not identify a phase. |
+| Problem                                 | How it appears in the exercise                                                                 |
+| :-------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| Positive hypothesis testing             | Model 1 can be fitted, but fitting it alone would hide that known alternatives perform better. |
+| Missing alternative phases              | Model 2 improves the physical story, and Model 3 improves it further by adding `NiO`.          |
+| Local residuals matter                  | The 30 degree residual remains important even after Model 3 wins by global metrics.            |
+| Small peaks can be decisive             | The 18 degree ordering peak is central to the ordered-phase claim.                             |
+| Statistical fit is not scientific proof | Model 0 has excellent metrics but does not identify a phase.                                   |
 
 ## Takeaways
 

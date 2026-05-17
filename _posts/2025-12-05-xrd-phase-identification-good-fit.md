@@ -87,13 +87,13 @@ _styles: |
 
 In 2023, the A-Lab paper presented an autonomous workflow for inorganic powder synthesis, combining computation, literature data, machine learning, active learning, robotics, and automated characterization <d-cite key="szymanski2023autonomous"></d-cite>. It reported 36 synthesized compounds from 57 targets over 17 days of operation. That is an important direction. If autonomous labs are going to matter, they need to close the loop from prediction to synthesis to characterization without waiting for a human to inspect every sample.
 
-The controversy that followed was not only about one set of material claims. A Nature news article framed the dispute around whether an AI-controlled laboratory had actually made new substances <d-cite key="peplow2023robot"></d-cite>. Leeman *et al.* then published a detailed PRX Energy perspective arguing that the reported phase assignments did not provide sufficient evidence for new material discovery <d-cite key="leeman2024challenges"></d-cite>.
+The controversy that followed was not only about one set of material claims. A Nature news article framed the dispute around whether an AI-controlled laboratory had actually made new substances <d-cite key="peplow2023robot"></d-cite>. Leeman _et al._ then published a detailed PRX Energy perspective arguing that the reported phase assignments did not provide sufficient evidence for new material discovery <d-cite key="leeman2024challenges"></d-cite>.
 
 For me, the useful lesson is narrower and more technical: **a fitted powder XRD pattern is not the same thing as a phase identification**.
 
 <div class="row justify-content-center xrd-blog-figure">
     <div class="col-12 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="references/a-lab.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the A-Lab Mg3MnNi3O8 assignment and the Leeman et al. reinterpretation. The central issue is whether the assigned peaks, indexing ticks, and residuals support the claimed phase, not only whether the calculated curve follows the observed pattern." class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="references/A-lab_Leeman.png" avoid_scaling=true alt="Annotated comparison of the A-Lab Mg3MnNi3O8 XRD assignment and the Leeman reinterpretation with residuals and indexing" title="A-Lab and Leeman residual comparison" caption="Annotated comparison of the A-Lab Mg3MnNi3O8 assignment and the Leeman et al. reinterpretation. The central issue is whether the assigned peaks, indexing ticks, and residuals support the claimed phase, not only whether the calculated curve follows the observed pattern." class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -109,7 +109,7 @@ Those are different questions.
 
 A model can improve a global fit while still missing the peak that actually matters for the claim. A weak superlattice reflection can carry the evidence for cation ordering. A small impurity peak might be scientifically secondary, while an unexplained peak at a diagnostic position might mean that the proposed model is incomplete. Collapsing all of that into one error metric loses the chemistry.
 
-This is why the Leeman *et al.* critique matters. Their argument is not that automation is useless. It is that automated interpretation has to handle the same burden of proof that a careful experimentalist would apply: compare against known phases, account for disorder, inspect residuals, and treat mixtures as serious alternatives.
+This is why the Leeman _et al._ critique matters. Their argument is not that automation is useless. It is that automated interpretation has to handle the same burden of proof that a careful experimentalist would apply: compare against known phases, account for disorder, inspect residuals, and treat mixtures as serious alternatives.
 
 ## What Automated XRD Needs To Prove
 
@@ -129,11 +129,11 @@ The notebook uses a synthetic XRD pattern because the goal is not to reanalyze t
 
 It compares four models:
 
-| Model | Interpretation |
-|:------|:---------------|
-| Model 0 | Free Gaussian diagnostic fit |
-| Model 1 | Proposed ordered phase |
-| Model 2 | Known disordered phase |
+| Model   | Interpretation                  |
+| :------ | :------------------------------ |
+| Model 0 | Free Gaussian diagnostic fit    |
+| Model 1 | Proposed ordered phase          |
+| Model 2 | Known disordered phase          |
 | Model 3 | Known disordered phase plus NiO |
 
 The flexible Gaussian model wins numerically, as expected, but it is not a phase assignment. Among the physically constrained models, the known-phase mixture is stronger than the ordered-phase explanation. Even then, the residuals suggest that the candidate set may still be incomplete.
