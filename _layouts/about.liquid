@@ -17,7 +17,11 @@ layout: default
   <article>
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
+        {% if page.profile.wulff_avatar %}
+          <div class="wulff-avatar-frame z-depth-1 rounded" role="img" aria-label="Rotating ASCII Wulff shape avatar">
+            <canvas class="wulff-avatar" data-wulff-avatar aria-hidden="true"></canvas>
+          </div>
+        {% elsif page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}

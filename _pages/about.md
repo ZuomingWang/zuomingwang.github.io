@@ -7,6 +7,7 @@ subtitle: zuoming(at)u.northwestern.edu
 profile:
   align: right
   image:
+  wulff_avatar: true
   image_circular: false # crops the image to make it circular
   more_info: false
 
