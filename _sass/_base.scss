@@ -873,8 +873,15 @@ footer.sticky-bottom {
   }
 
   .card {
-    img {
+    img,
+    video {
+      display: block;
       width: 100%;
+    }
+
+    video {
+      height: auto;
+      background-color: var(--global-card-bg-color);
     }
   }
 

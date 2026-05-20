@@ -4,7 +4,21 @@
       <div class="row no-gutters">
         {% if project.img %}
           <div class="col-md-6">
-            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
+            {% if project.video %}
+              <video
+                class="card-img project-card-video"
+                src="{{ project.video | relative_url }}"
+                poster="{{ project.img | relative_url }}"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                aria-label="project animated thumbnail"
+              ></video>
+            {% else %}
+              {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
+            {% endif %}
           </div>
         {% endif %}
         <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">

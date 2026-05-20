@@ -2,14 +2,28 @@
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
       {% if project.img %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
-        %}
+        {% if project.video %}
+          <video
+            class="card-img-top project-card-video"
+            src="{{ project.video | relative_url }}"
+            poster="{{ project.img | relative_url }}"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            aria-label="project animated thumbnail"
+          ></video>
+        {% else %}
+          {%
+            include figure.liquid
+            loading="eager"
+            path=project.img
+            sizes = "250px"
+            alt="project thumbnail"
+            class="card-img-top"
+          %}
+        {% endif %}
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
