@@ -30,11 +30,33 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-why-a-good-xrd-fit-is-not-a-phase-identification",
+        },{id: "post-30-questions-to-understand-vibe-coding",
         
-          title: "Why a Good XRD Fit Is Not a Phase Identification",
+          title: "30 questions to understand vibe coding",
         
-        description: "A short note on the A-Lab debate, Leeman et al., and evidence standards for automated diffraction analysis",
+        description: "“I would rather have questions that can&#39;t be answered than answers that can&#39;t be questioned.” ― Richard Feynman",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/30-questions-to-understand-vibe-coding/";
+          
+        },
+      },{id: "post-agentic-coding-checklist",
+        
+          title: "Agentic coding checklist",
+        
+        description: "“A computer lets you make more mistakes faster than any invention in human history.” — Mitch Ratcliffe",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/agentic-coding-knowledge-checklist/";
+          
+        },
+      },{id: "post-why-a-good-xrd-fit-is-not-a-phase-identification",
+        
+          title: "Why a good XRD fit Is not a phase identification",
+        
+        description: "“With four parameters I can fit an elephant, and with five I can make him wiggle his trunk.” — John von Neumann",
         section: "Posts",
         handler: () => {
           
