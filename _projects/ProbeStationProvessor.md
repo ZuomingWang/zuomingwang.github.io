@@ -2,7 +2,7 @@
 layout: distill
 title: Probe Station Processor
 description: Voltage-Current Data Processing Tool for Molecular Electronics
-img: https://github.com/user-attachments/assets/2985bac4-72ec-43c6-bedc-91913781bb02
+img: assets/img/projects_probe_station_processor/demo_thumbnail.webp
 importance: 1
 category: work
 related_publications: false
@@ -43,7 +43,8 @@ _styles: |
 
   d-article figure,
   d-article picture,
-  d-article img {
+  d-article img,
+  d-article video {
     max-width: 100%;
   }
 
@@ -85,7 +86,8 @@ _styles: |
     margin: 1.25rem auto 1.8rem;
   }
 
-  .psp-media img {
+  .psp-media img,
+  .psp-media video {
     display: block;
     width: 100%;
     height: auto;
@@ -107,7 +109,8 @@ _styles: |
     max-width: 900px;
   }
 
-  .psp-media-pair img {
+  .psp-media-pair img,
+  .psp-media-pair video {
     max-height: 360px;
   }
 
@@ -266,6 +269,6 @@ For support, refer to the script's comments or contact the author.
 **GitHub Repository**: [https://github.com/ZuomingWang/ProbeStationIVProcessor/tree/main](https://github.com/ZuomingWang/ProbeStationIVProcessor/tree/main)
 
 <div class="psp-media psp-media-pair">
-<img src="https://github.com/user-attachments/assets/2985bac4-72ec-43c6-bedc-91913781bb02" alt="demo_balanced">
-<img src="https://github.com/user-attachments/assets/79093ca4-ab1b-4f0c-8db0-9a1993e1da02" alt="image">
+<video src="/assets/video/probe_station_processor_demo.mp4" poster="/assets/img/projects_probe_station_processor/demo_thumbnail.webp" autoplay loop muted playsinline preload="metadata" aria-label="Probe Station Processor demo"></video>
+<img src="https://github.com/user-attachments/assets/79093ca4-ab1b-4f0c-8db0-9a1993e1da02" alt="image" loading="lazy" decoding="async">
 </div>
