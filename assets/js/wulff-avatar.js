@@ -13,7 +13,6 @@
   const FACE_DIVISIONS = 48;
   const SHADES = ".,-~:;=!*#$@";
   const LIGHT = normalize({ x: -0.42, y: -0.69, z: -0.63 });
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   function point(x, y, z) {
     return { x, y, z };
@@ -236,14 +235,13 @@
       ax: 0.42,
       ay: 0.33,
       az: 0,
-      visible: true,
       frame: 0,
       lastTime: 0,
       lastDraw: 0,
     };
 
     function shouldAnimate() {
-      return state.visible && !document.hidden && !reducedMotion.matches;
+      return !document.hidden;
     }
 
     function tick(time) {
@@ -277,22 +275,8 @@
       state.frame = window.requestAnimationFrame(tick);
     }
 
-    if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver((entries) => {
-        state.visible = entries.some((entry) => entry.isIntersecting);
-        refreshAnimation();
-      });
-
-      observer.observe(canvas);
-    }
-
     window.addEventListener("resize", refreshAnimation);
     document.addEventListener("visibilitychange", refreshAnimation);
-    if (typeof reducedMotion.addEventListener === "function") {
-      reducedMotion.addEventListener("change", refreshAnimation);
-    } else if (typeof reducedMotion.addListener === "function") {
-      reducedMotion.addListener(refreshAnimation);
-    }
     refreshAnimation();
   }
 
