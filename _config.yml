@@ -237,7 +237,7 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: [] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: [tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"

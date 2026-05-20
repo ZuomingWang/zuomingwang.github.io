@@ -1,11 +1,11 @@
 ---
 layout: distill
-title: Why a Good XRD Fit Is Not a Phase Identification
+title: Why a good XRD fit Is not a phase identification
 date: 2025-05-05 09:00:00-0500
-description: A short note on the A-Lab debate, Leeman et al., and evidence standards for automated diffraction analysis
-tags: materials-science xrd automation
+description: "“With four parameters I can fit an elephant, and with five I can make him wiggle his trunk.” — John von Neumann"
+tags: xrd automation materials-science
 categories: materials-science
-featured: true
+featured: false
 site_owned: true
 giscus_comments: false
 related_posts: false
