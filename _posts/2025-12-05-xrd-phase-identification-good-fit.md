@@ -136,7 +136,30 @@ It compares four models:
 | Model 2 | Known disordered phase          |
 | Model 3 | Known disordered phase plus NiO |
 
-The flexible Gaussian model wins numerically, as expected, but it is not a phase assignment. Among the physically constrained models, the known-phase mixture is stronger than the ordered-phase explanation. Even then, the residuals suggest that the candidate set may still be incomplete.
+Each diffraction peak is represented as a Gaussian:
+
+$$
+I(x) = A \exp \left(-\frac{(x - \mu)^2}{2\sigma^2}\right)
+$$
+
+The constrained phase models use tabulated relative peak intensities. The fitting routine adjusts scale factors, a linear background, and a shared peak width. The notebook evaluates each fit with residual plots, RSS and $\chi^2$, reduced $\chi^2$, AIC, and an F-test asking whether adding `NiO` significantly improves the known-phase model.
+
+The flexible Gaussian model wins numerically, as expected, but it is not a phase assignment. It has unconstrained peak positions and amplitudes, so it is useful as a diagnostic baseline rather than as evidence for a crystal phase.
+
+| Model   |     RSS | Chi-square | Reduced chi-square |       AIC |
+| :------ | ------: | ---------: | -----------------: | --------: |
+| Model 0 |  1.5259 |    3,814.8 |             1.9180 | -14,334.6 |
+| Model 1 | 27.6514 |   69,128.5 |            34.6335 | -8,554.45 |
+| Model 2 | 21.1439 |   52,859.7 |            26.4828 | -9,091.10 |
+| Model 3 | 19.4478 |   48,619.4 |            24.3706 | -9,256.34 |
+
+Among the physically constrained models, Model 3 is the strongest explanation. It fits the data better than the ordered `Mg3MnNi3O8` model and better than the single disordered `Ni-Mn-O` model.
+
+| Comparison          | F statistic | p-value | Interpretation                                             |
+| :------------------ | ----------: | ------: | :--------------------------------------------------------- |
+| Model 2 vs. Model 3 |      173.99 | < 1e-10 | Adding `NiO` gives a statistically significant improvement |
+
+This supports the known-mixture explanation over the single disordered phase. Even then, the residuals suggest that the candidate set may still be incomplete.
 
 That last point is the most important one. The best model in a limited set is not automatically the correct model. It is only the best explanation that has been tested so far.
 
