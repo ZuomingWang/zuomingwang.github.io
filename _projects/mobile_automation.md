@@ -6,6 +6,7 @@ img: assets/img/projects_mobile_automation/Picture12.png
 github: https://github.com/ZuomingWang/MobileAutomationRobot
 importance: 2
 category: fun
+published: false
 related_publications: false
 date: 2025-04-30 09:00:00-0500
 bibliography: mobile-automation-robot.bib
