@@ -3,6 +3,7 @@ layout: distill
 title: Mobile Automation Robot
 description: Robot localization, mapping, and navigation from noisy sensors
 img: assets/img/projects_mobile_automation/Picture12.png
+github: https://github.com/ZuomingWang/MobileAutomationRobot
 importance: 2
 category: fun
 related_publications: false
