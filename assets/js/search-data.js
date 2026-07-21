@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-30-questions-to-understand-vibe-coding",
+        },{id: "post-machine-learning-for-xrd-phase-identification",
+        
+          title: "Machine learning for XRD phase identification",
+        
+        description: "Mixtures, uncertainty, texture, and missing phases shape the practical limits of automated XRD analysis.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/machine-learning-xrd-phase-identification/";
+          
+        },
+      },{id: "post-30-questions-to-understand-vibe-coding",
         
           title: "30 questions to understand vibe coding",
         
