@@ -4,6 +4,7 @@ title: Probe Station Processor
 description: Voltage-Current Data Processing Tool for Molecular Electronics
 img: assets/img/projects_probe_station_processor/demo_thumbnail.webp
 video: assets/video/probe_station_processor_demo.mp4
+github: https://github.com/ZuomingWang/ProbeStationIVProcessor
 importance: 1
 category: work
 related_publications: false
