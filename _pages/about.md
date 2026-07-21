@@ -3,6 +3,9 @@ layout: about
 title: about
 permalink: /
 subtitle: zuoming(at)u.northwestern.edu
+one_page_sections: true
+display_categories: [work, fun]
+horizontal: false
 
 profile:
   align: right
@@ -11,7 +14,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: false
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # the full publications list appears between about and blog
 social: true # includes social icons at the bottom of the page
 
 announcements:

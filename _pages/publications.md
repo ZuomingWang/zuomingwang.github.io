@@ -4,7 +4,8 @@ permalink: /publications/
 title: publications
 description: publications by categories in reversed chronological order.
 nav: true
-nav_order: 2
+nav_order: 1
+home_section: publications
 ---
 
 <!-- _pages/publications.md -->
@@ -13,8 +14,4 @@ nav_order: 2
 
 <!-- {% include bib_search.liquid %} -->
 
-<div class="publications">
-
-{% bibliography %}
-
-</div>
+{% include publications_listing.liquid %}

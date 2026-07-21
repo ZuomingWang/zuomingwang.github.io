@@ -40,6 +40,44 @@ body.sticky-bottom-footer {
 
 // TODO: redefine content layout.
 
+// One-page home
+.one-page-section {
+  scroll-margin-top: 76px;
+}
+
+.one-page-section:not(.one-page-section-home) {
+  padding-top: 4.5rem;
+  margin-top: 4.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.one-page-section-header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+}
+
+.one-page-home .projects .category {
+  scroll-margin-top: 86px;
+}
+
+@media (max-width: 575.98px) {
+  .one-page-section:not(.one-page-section-home) {
+    padding-top: 3.25rem;
+    margin-top: 3.25rem;
+  }
+
+  .one-page-section-header {
+    margin-bottom: 2rem;
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/
