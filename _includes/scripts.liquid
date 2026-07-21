@@ -326,6 +326,11 @@
   </script>
 {% endif %}
 
+{% if page.one_page_sections %}
+  <!-- One-page section navigation -->
+  <script defer src="{{ '/assets/js/section-navigation.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
+
 {% if site.search_enabled %}
   <!-- Search -->
   <script type="module" src="{{ '/assets/js/search/ninja-keys.min.js' | relative_url | bust_file_cache }}"></script>

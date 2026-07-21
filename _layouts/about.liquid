@@ -2,95 +2,110 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span>{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+  <section id="home" class="one-page-section one-page-section-home" data-scroll-section>
+    <header class="post-header">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span>{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </header>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.wulff_avatar %}
-          <div class="wulff-avatar-frame z-depth-1 rounded" role="img" aria-label="Rotating ASCII Wulff shape avatar">
-            <canvas class="wulff-avatar" data-wulff-avatar aria-hidden="true"></canvas>
-          </div>
-        {% elsif page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
+    <article>
+      {% if page.profile %}
+        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+          {% if page.profile.wulff_avatar %}
+            <div class="wulff-avatar-frame z-depth-1 rounded" role="img" aria-label="Rotating ASCII Wulff shape avatar">
+              <canvas class="wulff-avatar" data-wulff-avatar aria-hidden="true"></canvas>
+            </div>
+          {% elsif page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+      <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 2rem; margin-bottom: 1rem;">
-      <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 1rem; margin-bottom: 1rem;">
-      {% include news.liquid limit=true %}
-    {% endif %}
+      <!-- News -->
+      {% if page.announcements and page.announcements.enabled %}
+        <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 2rem; margin-bottom: 1rem;">
+        <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 1rem; margin-bottom: 1rem;">
+        {% include news.liquid limit=true %}
+      {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
+      <!-- Latest posts -->
+      {% if page.latest_posts and page.latest_posts.enabled %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 2rem; margin-bottom: 1rem;">
-      <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 1rem; margin-bottom: 1rem;">
-      {% include selected_papers.liquid %}
-    {% endif %}
+      <!-- Additional content after selected papers -->
+      {% if page.after_selected_papers %}
+        <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 2rem; margin-bottom: 1rem;">
+        <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">for fun, I like</h2>
+        <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 1rem; margin-bottom: 1rem;">
+        {{ page.after_selected_papers }}
+      {% endif %}
 
-    <!-- Additional content after selected papers -->
-    {% if page.after_selected_papers %}
-      <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 2rem; margin-bottom: 1rem;">
-      <h2 style="margin-top: 0; margin-bottom: 0; text-align: center;">for fun, I like</h2>
-      <hr style="border-top: 1px solid var(--global-divider-color); margin-top: 1rem; margin-bottom: 1rem;">
-      {{ page.after_selected_papers }}
-    {% endif %}
+      <!-- Social -->
+      {% if page.social %}
+        <div class="social">
+          <div class="contact-icons">{% include social.liquid %}</div>
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      {% endif %}
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+      {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
+    </article>
+  </section>
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  {% if page.one_page_sections %}
+    <section id="publications" class="one-page-section" data-scroll-section aria-labelledby="publications-section-title">
+      <header class="one-page-section-header">
+        <h2 id="publications-section-title">publications</h2>
+      </header>
+      {% include publications_listing.liquid %}
+    </section>
+
+    <section id="blog" class="one-page-section" data-scroll-section aria-labelledby="blog-section-title">
+      <header class="one-page-section-header">
+        <h2 id="blog-section-title">blog</h2>
+      </header>
+      {% include blog_listing.liquid %}
+    </section>
+
+    <section id="projects" class="one-page-section" data-scroll-section aria-labelledby="projects-section-title">
+      <header class="one-page-section-header">
+        <h2 id="projects-section-title">projects</h2>
+      </header>
+      {% include projects_listing.liquid display_categories=page.display_categories horizontal=page.horizontal %}
+    </section>
+  {% endif %}
 </div>
