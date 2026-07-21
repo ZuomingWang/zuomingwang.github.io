@@ -109,7 +109,6 @@ _styles: |
     line-height: 1.5;
     text-align: center;
   }
-
 ---
 
 Powder X-ray diffraction phase identification takes a measured spectrum and a set of candidate crystal structures and assigns plausible phases. Real samples complicate this mapping through phase coexistence, peak shifts, broadening, texture, disorder, background, and phases missing from the reference database.
