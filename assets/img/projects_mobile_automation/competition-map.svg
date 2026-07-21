@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 790" role="img" aria-labelledby="title desc">
+  <title id="title">Competition map with fixed walls, optional walls, goals, and AprilTags</title>
+  <desc id="desc">A line map spanning roughly six by four and a half meters. Eight goal locations, two optional walls, and eight AprilTag beacons are marked.</desc>
+  <defs>
+    <style>
+      .frame { fill: #fbfbfc; stroke: #d9dde2; stroke-width: 1.5; }
+      .wall { stroke: #27313b; stroke-width: 3.2; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+      .optional { stroke: #d28716; stroke-width: 5; stroke-dasharray: 11 8; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+      .tag { fill: #2779bd; stroke: #ffffff; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+      .goal { fill: #2d9661; stroke: #ffffff; stroke-width: 1.8; vector-effect: non-scaling-stroke; }
+      .axis { font: 500 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #68727d; }
+      .legend { font: 500 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #3d4650; }
+      .heading { font: 650 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #20262d; }
+    </style>
+  </defs>
+
+  <rect class="frame" x="55" y="55" width="890" height="650" rx="12"/>
+  <text class="heading" x="55" y="34">6.10 m × 4.57 m competition environment</text>
+
+  <g transform="translate(500 380) scale(135 -135)">
+    <line class="wall" x1="-3.048" y1="-2.286" x2="-3.048" y2="2.286"/>
+    <line class="wall" x1="-3.048" y1="2.286" x2="3.048" y2="2.286"/>
+    <line class="wall" x1="3.048" y1="2.286" x2="3.048" y2="-2.286"/>
+    <line class="wall" x1="3.048" y1="-2.286" x2="-3.048" y2="-2.286"/>
+    <line class="wall" x1="2.16" y1="-0.16" x2="3.05" y2="-0.15"/>
+    <line class="wall" x1="1.53" y1="0.78" x2="1.53" y2="2.29"/>
+    <line class="wall" x1="1.53" y1="1.35" x2="0.58" y2="1.36"/>
+    <line class="wall" x1="0.68" y1="-0.83" x2="-0.57" y2="-0.83"/>
+    <line class="wall" x1="-0.57" y1="-0.78" x2="-0.57" y2="-2.29"/>
+    <line class="wall" x1="-1.87" y1="-1.42" x2="-1.89" y2="-0.15"/>
+    <line class="wall" x1="-1.88" y1="-0.14" x2="-3.05" y2="-0.14"/>
+    <line class="wall" x1="-1.87" y1="0.81" x2="-0.92" y2="0.81"/>
+    <line class="wall" x1="-0.92" y1="0.77" x2="-0.92" y2="2.29"/>
+    <line class="optional" x1="1.84" y1="-2.28" x2="1.84" y2="-1.38"/>
+    <line class="optional" x1="1.83" y1="-1.0782" x2="3.0519" y2="-1.087"/>
+    <line class="optional" x1="-2.5878" y1="2.3187" x2="-2.6068" y2="1.3995"/>
+
+    <g>
+      <circle class="goal" cx="0.168" cy="-1.68" r="0.07"/>
+      <circle class="goal" cx="2.44" cy="-1.69" r="0.07"/>
+      <circle class="goal" cx="0.41" cy="0.009" r="0.07"/>
+      <circle class="goal" cx="-1.84" cy="1.69" r="0.07"/>
+      <circle class="goal" cx="2.44" cy="0.89" r="0.07"/>
+      <circle class="goal" cx="0.8" cy="1.82" r="0.07"/>
+      <circle class="goal" cx="-1.07" cy="-1.68" r="0.07"/>
+      <circle class="goal" cx="-2.44" cy="-0.63" r="0.07"/>
+    </g>
+
+    <g>
+      <path class="tag" d="M-2.56 -2.17 l-0.08 -0.14 h0.16 z"/>
+      <path class="tag" d="M-2.45 -0.01 l-0.08 -0.14 h0.16 z"/>
+      <path class="tag" d="M-0.98 1.68 l-0.08 -0.14 h0.16 z"/>
+      <path class="tag" d="M-0.52 -1.61 l-0.08 -0.14 h0.16 z"/>
+      <path class="tag" d="M1.47 1.99 l-0.08 -0.14 h0.16 z"/>
+      <path class="tag" d="M-2.564 1.974 l-0.08 -0.14 h0.16 z"/>
+      <path class="tag" d="M2.59 -2.17 l-0.08 -0.14 h0.16 z"/>
+      <path class="tag" d="M2.65 -0.11 l-0.08 -0.14 h0.16 z"/>
+    </g>
+  </g>
+
+  <text class="axis" x="488" y="730">x (m)</text>
+  <text class="axis" transform="translate(28 395) rotate(-90)">y (m)</text>
+
+  <g transform="translate(90 752)">
+    <line class="wall" x1="0" y1="0" x2="38" y2="0"/>
+    <text class="legend" x="50" y="6">fixed wall</text>
+    <line class="optional" x1="185" y1="0" x2="223" y2="0"/>
+    <text class="legend" x="235" y="6">optional wall</text>
+    <circle class="goal" cx="420" cy="0" r="8"/>
+    <text class="legend" x="438" y="6">goal</text>
+    <path class="tag" d="M590 8 l-9 -16 h18 z"/>
+    <text class="legend" x="610" y="6">AprilTag beacon</text>
+  </g>
+</svg>

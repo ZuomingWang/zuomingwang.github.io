@@ -5,6 +5,7 @@ description: What can go wrong when diffraction fits are treated as phase proof
 img: assets/img/projects_xrd_phase_identification/A-lab_Leeman.png
 importance: 3
 category: fun
+date: 2026-05-16 15:11:43-0500
 bibliography: xrd-phase-identification-good-fit.bib
 authors:
   - name: Zuoming Wang

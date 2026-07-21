@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Mobile robot navigation and replanning pipeline</title>
+  <desc id="desc">The robot initializes from beacon and depth measurements, orders goals, plans with RRT, follows waypoints, updates an occupancy grid, and replans when an optional wall is detected.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#56606b"/>
+    </marker>
+    <style>
+      .box { fill: #f7f8fa; stroke: #34495e; stroke-width: 2.2; rx: 18; }
+      .sense { fill: #eef6ff; stroke: #2878b5; }
+      .plan { fill: #f1f8f4; stroke: #287a50; }
+      .adapt { fill: #fff7e8; stroke: #b97816; }
+      .decision { fill: #fff7e8; stroke: #b97816; stroke-width: 2.2; }
+      .label { font: 600 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #20262d; text-anchor: middle; }
+      .small { font: 400 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #59636e; text-anchor: middle; }
+      .edge { fill: none; stroke: #56606b; stroke-width: 2.5; marker-end: url(#arrow); }
+      .edge-label { font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #59636e; }
+      .lane { font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.4px; fill: #727c86; }
+    </style>
+  </defs>
+
+  <text class="lane" x="48" y="54">INITIALIZE</text>
+  <text class="lane" x="404" y="54">PLAN AND TRACK</text>
+  <text class="lane" x="814" y="54">PERCEIVE AND ADAPT</text>
+
+  <rect class="box sense" x="48" y="92" width="250" height="98"/>
+  <text class="label" x="173" y="128">Rotate and sense</text>
+  <text class="small" x="173" y="157">AprilTag + 9 depth rays</text>
+
+  <rect class="box sense" x="48" y="246" width="250" height="120"/>
+  <text class="label" x="173" y="285">Initial pose</text>
+  <text class="small" x="173" y="316">Beacon-restricted search</text>
+  <text class="small" x="173" y="340">or depth-only fallback</text>
+
+  <rect class="box plan" x="384" y="92" width="250" height="98"/>
+  <text class="label" x="509" y="128">Order eight goals</text>
+  <text class="small" x="509" y="157">Short-route heuristic</text>
+
+  <rect class="box plan" x="384" y="246" width="250" height="120"/>
+  <text class="label" x="509" y="285">Plan with RRT</text>
+  <text class="small" x="509" y="316">Safety clearance</text>
+  <text class="small" x="509" y="340">Shortcut · smooth · densify</text>
+
+  <rect class="box plan" x="384" y="438" width="250" height="112"/>
+  <text class="label" x="509" y="478">Track waypoints</text>
+  <text class="small" x="509" y="509">Odometry + feedback</text>
+  <text class="small" x="509" y="533">linearization</text>
+
+  <rect class="box adapt" x="792" y="92" width="270" height="98"/>
+  <text class="label" x="927" y="128">Read live sensors</text>
+  <text class="small" x="927" y="157">Depth · bump · odometry</text>
+
+  <rect class="box adapt" x="792" y="246" width="270" height="120"/>
+  <text class="label" x="927" y="285">Update occupancy</text>
+  <text class="small" x="927" y="316">Log-odds grid</text>
+  <text class="small" x="927" y="340">Bresenham ray updates</text>
+
+  <path class="decision" d="M 927 416 L 1050 486 L 927 556 L 804 486 Z"/>
+  <text class="label" x="927" y="478">Optional wall</text>
+  <text class="label" x="927" y="505">confirmed?</text>
+
+  <path class="edge" d="M173 190 V246"/>
+  <path class="edge" d="M298 306 H342 Q364 306 364 284 V163 Q364 141 384 141"/>
+  <path class="edge" d="M509 190 V246"/>
+  <path class="edge" d="M509 366 V438"/>
+  <path class="edge" d="M634 494 H750 Q772 494 772 472 V163 Q772 141 792 141"/>
+  <path class="edge" d="M927 190 V246"/>
+  <path class="edge" d="M927 366 V416"/>
+  <path class="edge" d="M804 486 H690 Q668 486 668 464 V328 Q668 306 634 306"/>
+  <text class="edge-label" x="707" y="470">yes · update map</text>
+  <path class="edge" d="M927 556 V582 H509 V550"/>
+  <text class="edge-label" x="944" y="581">no · continue</text>
+</svg>
