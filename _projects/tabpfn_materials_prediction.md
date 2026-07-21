@@ -2,7 +2,7 @@
 layout: distill
 title: TabPFN for Small-Data Materials Prediction
 description: Small-data materials prediction with the Tabular Prior-Data Fitted Network (TabPFN) and structure-aware features
-img: assets/img/projects_tabpfn/structure-aware-gain.png
+img: assets/img/projects_tabpfn/Screen-Shot-2022-10-11-at-10.31.12.png
 importance: 2
 category: work
 github: https://github.com/ZuomingWang/matbench-tabpfn
