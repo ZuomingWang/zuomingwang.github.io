@@ -477,19 +477,19 @@ ninja.data = [{
               window.location.href = "/projects/ProbeStationProvessor/";
             },},{id: "projects-mobile-automation-robot",
           title: 'Mobile Automation Robot',
-          description: "Robot localization, mapping, and navigation from noisy sensors",
+          description: "A code-grounded walkthrough of localization, mapping, RRT planning, and online replanning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mobile_automation/";
-            },},{id: "projects-tabpfn-for-small-data-materials-prediction",
-          title: 'TabPFN for Small-Data Materials Prediction',
-          description: "Small-data materials prediction with the Tabular Prior-Data Fitted Network (TabPFN) and structure-aware features",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/tabpfn_materials_prediction/";
             },},{id: "projects-xrd-phase-identification",
           title: 'XRD Phase Identification',
           description: "What can go wrong when diffraction fits are treated as phase proof",
           section: "Projects",handler: () => {
               window.location.href = "/projects/xrd_phase_identification/";
+            },},{id: "projects-tabpfn-for-small-data-materials-prediction",
+          title: 'TabPFN for Small-Data Materials Prediction',
+          description: "Small-data materials prediction with the Tabular Prior-Data Fitted Network (TabPFN) and structure-aware features",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tabpfn_materials_prediction/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
