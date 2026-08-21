@@ -415,8 +415,8 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "news-talk-and-poster-at-the-15th-international-symposium-on-fusion-nuclear-technology-practicality-of-deuterium-electrochemical-charging-method-for-desorption-study-in-low-alloy-steel-and-pure-zirconium",
-          title: 'Talk and poster at the 15th International Symposium on Fusion Nuclear Technology: Practicality...',
+      },{id: "news-presented-my-poster-as-the-first-author-at-the-15th-international-symposium-on-fusion-nuclear-technology-practicality-of-deuterium-electrochemical-charging-method-for-desorption-study-in-low-alloy-steel-and-pure-zirconium",
+          title: 'Presented my poster as the first author at the 15th International Symposium on...',
           description: "",
           section: "News",},{id: "news-visited-novel-materials-research-laboratories-national-center-for-nuclear-research-poland-for-collaborated-research-in-hydrogen-retension",
           title: 'Visited Novel Materials Research Laboratories, National Center for Nuclear Research (Poland) for collaborated...',
