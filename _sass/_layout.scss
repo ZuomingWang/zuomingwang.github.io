@@ -67,6 +67,21 @@ body.sticky-bottom-footer {
   scroll-margin-top: 86px;
 }
 
+.about-contact-links,
+.about-contact-network {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.about-contact-links {
+  flex-wrap: wrap;
+}
+
+.about-contact-network {
+  white-space: nowrap;
+}
+
 @media (max-width: 575.98px) {
   .one-page-section:not(.one-page-section-home) {
     padding-top: 3.25rem;

@@ -3,6 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: zuoming(at)u.northwestern.edu
+github: https://github.com/ZuomingWang
 one_page_sections: true
 display_categories: [work, fun]
 horizontal: false
@@ -33,7 +34,6 @@ after_selected_papers: |
     <li>biking</li>
     <li>sailing</li>
     <li>cooking</li>
-    <li>making yogurt</li>
     <li>walking fast so that my legs heat up</li>
     <li>reading books - mostly non-fiction these days</li>
   </ul>
@@ -81,4 +81,4 @@ after_selected_papers: |
   }
 </style>
 
-I received my <span class="degree-preview"><a href="{{ '/assets/pdf/Technion_BSc_scan.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Bachelor of Science</a><span class="degree-preview-card" aria-hidden="true"><img src="{{ '/assets/img/education/technion-bsc-thumbnail.png' | relative_url }}" alt=""></span></span> in Materials Science and Engineering from both [Guangdong Technion - Israel Institite of Technology (China)](https://gtiit.technion.ac.il) and [Technion - Israel Institute of Technology (Israel)](https://www.technion.ac.il/en/). I had the good fortune of doing research in hydrogen retention, spintronics, molecular electronics and hydrogels.
+I received my <span class="degree-preview"><a href="{{ '/assets/pdf/Technion_BSc_scan.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Bachelor of Science</a><span class="degree-preview-card" aria-hidden="true"><img src="{{ '/assets/img/education/technion-bsc-thumbnail.png' | relative_url }}" alt=""></span></span> in Materials Science and Engineering from [Technion - Israel Institute of Technology (Israel)](https://www.technion.ac.il/en/). I had research experiences in hydrogen retention, spintronics, molecular electronics and hydrogels.

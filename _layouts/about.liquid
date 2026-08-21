@@ -12,7 +12,15 @@ layout: default
           {{ site.title }}
         {% endif %}
       </h1>
-      <p class="desc">{{ page.subtitle }}</p>
+      <p class="desc about-contact-links">
+        <span>{{ page.subtitle }}</span>
+        {% if page.github %}
+          <span class="about-contact-network">
+            <span aria-hidden="true">•</span>
+            <a href="{{ page.github }}" target="_blank" rel="noopener noreferrer">github</a>
+          </span>
+        {% endif %}
+      </p>
     </header>
 
     <article>
