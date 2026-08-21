@@ -5,6 +5,7 @@ description: Small-data materials prediction with the Tabular Prior-Data Fitted 
 img: assets/img/projects_tabpfn/Screen-Shot-2022-10-11-at-10.31.12.png
 importance: 2
 category: work
+published: true
 github: https://github.com/ZuomingWang/matbench-tabpfn
 related_publications: false
 date: 2026-06-08 09:00:00-0500
