@@ -490,6 +490,11 @@ ninja.data = [{
           description: "Small-data materials prediction with the Tabular Prior-Data Fitted Network (TabPFN) and structure-aware features",
           section: "Projects",handler: () => {
               window.location.href = "/projects/tabpfn_materials_prediction/";
+            },},{id: "projects-tof-sims-flake-pipeline",
+          title: 'ToF-SIMS Flake Pipeline',
+          description: "Human-in-the-loop ion mapping and SAM-assisted flake segmentation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tofsims_flake_pipeline/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
