@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper accepted to <a href="https://journals.aps.org/prb/">Physical Review B</a>: <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.224403">Magnetic sublattice disorder mediated exchange bias at the interfaces of Ho/Er multilayers in their conical phases</a>.
+Paper accepted to <a href="https://journals.aps.org/prb/">Physical Review B</a>: <span class="news-preview"><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.224403">Magnetic sublattice disorder mediated exchange bias at the interfaces of Ho/Er multilayers in their conical phases</a><span class="news-preview-card" aria-hidden="true"><img src="{{ '/assets/img/news/magnetic-sublattice-disorder-preview.png' | relative_url }}" alt=""></span></span>.

@@ -79,6 +79,43 @@ after_selected_papers: |
     opacity: 1;
     transform: translateY(0);
   }
+
+  .news-preview-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1100;
+    width: min(520px, calc(100vw - 2rem));
+    max-height: 70vh;
+    padding: 0.4rem;
+    visibility: hidden;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.35rem;
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -48%) scale(0.98);
+    transition:
+      opacity 150ms ease,
+      transform 150ms ease,
+      visibility 150ms ease;
+  }
+
+  .news-preview-card img {
+    display: block;
+    width: 100%;
+    max-height: calc(70vh - 0.8rem);
+    object-fit: contain;
+    border-radius: 0.2rem;
+  }
+
+  .news-preview:hover .news-preview-card,
+  .news-preview:focus-within .news-preview-card {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 </style>
 
 I received my <span class="degree-preview"><a href="{{ '/assets/pdf/Technion_BSc_scan.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Bachelor of Science</a><span class="degree-preview-card" aria-hidden="true"><img src="{{ '/assets/img/education/technion-bsc-thumbnail.png' | relative_url }}" alt=""></span></span> in Materials Science and Engineering from [Technion - Israel Institute of Technology (Israel)](https://www.technion.ac.il/en/). I had research experiences in charge transport, spintronics, hydrogen retention, molecular electronics and hydrogels.
