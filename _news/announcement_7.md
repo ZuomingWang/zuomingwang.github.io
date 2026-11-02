@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented my <a href="{{ '/assets/pdf/isfnt-poster.pdf' | relative_url }}">poster</a> as the first author at the <a href="https://isfnt2023.com">15th International Symposium on Fusion Nuclear Technology</a>: Practicality of deuterium electrochemical charging method for desorption study in low-alloy steel and pure Zirconium.
+Presented my poster as the first author at the <a href="https://isfnt2023.com">15th International Symposium on Fusion Nuclear Technology</a>: <span class="news-preview"><a href="{{ '/assets/pdf/isfnt-poster.pdf' | relative_url }}">Practicality of deuterium electrochemical charging method for desorption study in low-alloy steel and pure Zirconium</a><span class="news-preview-card" aria-hidden="true"><img src="{{ '/assets/img/news/isfnt-poster-preview.png' | relative_url }}" alt=""></span></span>.
